@@ -26,7 +26,7 @@ def main():
 
     for k in dates.keys():
         print(k)
-        make_process = subprocess.Popen("make EPOCH={};".format(k), shell=True, stdout=subprocess.PIPE, stderr=sys.stdout.fileno())
+        make_process = subprocess.Popen("make -f makefile_epoch EPOCH={};".format(k), shell=True, stdout=subprocess.PIPE, stderr=sys.stdout.fileno())
         while True:
             line = make_process.stdout.readline()
             if not line:break
