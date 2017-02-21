@@ -4,7 +4,7 @@ import numpy as np
 import  subprocess
 
 try:
-    fiberassign_dates = 'epochs_date.txt'
+    fiberassign_dates = 'world/epochs_date.txt'
     f = open(fiberassign_dates, 'r')
 except IOError as e:
     print('Problem opening file epochs_date.txt')

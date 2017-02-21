@@ -21,7 +21,7 @@ $(mtlfile):
 	touch $(mtlfile)
 
 clean:
-	rm -Rf 
+	rm -Rf collaboration/* disk/* telescope/* collaboration/*
 
 
 
